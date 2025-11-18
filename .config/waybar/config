@@ -11,17 +11,6 @@
       "max-length": 50
     },
 
-    "custom/swaync-control": {
-	"format": "🔔 {}",
-	"tooltip": false,
-	"on-click": "swaync-client -t", // Abre/cierra el Notification Center al hacer clic
-	"return-type": "json",
-	"exec": "swaync-client -c", // Comando para obtener el conteo de notificaciones
-	"exec-if": "which swaync-client", // Ejecuta solo si swaync-client está instalado
-	"on-click-right": "swaync-client -d", // Borra todas las notificaciones al hacer clic derecho
-	"interval": 5 // Verifica cada 5 segundos
-    },
-
     "hyprland/workspaces": {
 	"all-outputs": true,
 	"format": "{name}: {icon}",
@@ -105,7 +94,8 @@
         "format-icons":{
             "activated": "",
             "deactivated": ""
-        }
+        },
+	"on-click": "swaync-client -t"
     },
 
 // custom modules
