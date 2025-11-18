@@ -1,9 +1,9 @@
 {
     "position": "left",
     "margin": "5, 5",
-    "modules-left": ["sway/mode","pulseaudio","cpu", "tray","custom/swaync-control",],
+    "modules-left": ["sway/mode","pulseaudio","cpu", "tray",],
     "modules-center": ["custom/browser","custom/terminal","hyprland/workspaces","custom/files","custom/launcher",],
-    "modules-right": ["memory","battery", "idle_inhibitor", "clock",],
+    "modules-right": ["memory","battery", "clock","custom/swaync",],
 
 // modules
     "sway/mode": {
@@ -89,13 +89,10 @@
       "on-click": "pavucontrol"
     },
 
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons":{
-            "activated": "",
-            "deactivated": ""
-        },
-	"on-click": "swaync-client -t"
+    "custom/swaync": {
+        "format": "",
+	"on-click": "swaync-client -t",
+	"tooltip": false
     },
 
 // custom modules
