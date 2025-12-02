@@ -1,0 +1,10 @@
+# Habilita la visualización de imágenes (iconos)
+allow_images=true
+
+# Define el tamaño de los iconos en píxeles (ejemplo: 40px)
+image_size=40 
+
+# Opciones adicionales recomendadas para drun (opcional)
+allow_markup=true
+parse_search=true
+show=drun
