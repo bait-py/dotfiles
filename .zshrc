@@ -40,3 +40,7 @@ eval "$(pyenv init - zsh --no-rehash)"
 # --- ATUIN ---
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
+
+# POKEGET
+export PATH="$HOME/.local/bin:$PATH"
+pokeget random --hide-name
