@@ -15,10 +15,6 @@ alias ll='ls -la --color=auto'
 alias lt='ls --tree'
 alias serve='npx http-server . -c-1'
 
-# NVIM path
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-
-
 # --- Carga de Archivos ---
 # Si estos archivos son scripts que exportan variables, usa 'source' o '.' una sola vez.
 . "$HOME/.local/bin/env"
