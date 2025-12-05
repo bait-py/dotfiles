@@ -4,7 +4,6 @@ This repository contains my Hyprland configuration and related dotfiles. It is o
 ## Quick links
 - Shells and env:
   - [`.zshrc`](.zshrc)
-  - [`.bashrc`](.bashrc)
   - [`.gitignore`](.gitignore)
 - Hyprland:
   - [`hyprland.conf`](.config/hypr/hyprland.conf) (contains variables like [`$terminal`](.config/hypr/hyprland.conf), [`$menu`](.config/hypr/hyprland.conf))
