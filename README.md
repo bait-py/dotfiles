@@ -2,22 +2,31 @@
 This repository contains my Hyprland configuration and related dotfiles. It is organized so you can reuse the compositor settings, UI (waybar / wofi / wlogout) styling, terminal config, and Fastfetch flavors.
 
 ## Quick links
-- Shells and env:
+- Shell and env:
   - [`.zshrc`](.zshrc)
   - [`.gitignore`](.gitignore)
+  - [`starship.toml`](.config/starship.toml)
+  - [`atuin/config.toml`](.config/atuin/config.toml)
 - Hyprland:
-  - [`hyprland.conf`](.config/hypr/hyprland.conf) (contains variables like [`$terminal`](.config/hypr/hyprland.conf), [`$menu`](.config/hypr/hyprland.conf))
+  - [`hyprland.conf`](.config/hypr/hyprland.conf)
+  - [`monitors.conf`](.config/hypr/monitors.conf)
+  - [`workspaces.conf`](.config/hypr/workspaces.conf)
   - [`hyprpaper.conf`](.config/hypr/hyprpaper.conf)
   - [`hyprlock.conf`](.config/hypr/hyprlock.conf)
 - Bar / UI:
-  - [`waybar/config`](.config/waybar/config)
-  - [`waybar/style.css`](.config/waybar/style.css)
+  - [`waybar/config.jsonc`](waybar/config.jsonc)
+  - [`waybar/style.css`](waybar/style.css)
+  - [`wofi/config`](.config/wofi/config)
   - [`wofi/style.css`](.config/wofi/style.css)
+- Notifications:
+  - [`swaync/style.css`](.config/swaync/style.css)
 - Logout screen:
   - [`wlogout/layout`](.config/wlogout/layout)
   - [`wlogout/style.css`](.config/wlogout/style.css)
 - Terminal:
-  - [`alacritty.toml`](.config/alacritty/alacritty.toml)
+  - [`kitty/kitty.conf`](.config/kitty/kitty.conf)
+- System monitor:
+  - [`btop/btop.conf`](.config/btop/btop.conf)
 - Fastfetch (neofetch-like):
   - [`config.jsonc`](.config/fastfetch/config.jsonc)
   - [`config-v2.jsonc`](.config/fastfetch/config-v2.jsonc)
@@ -28,9 +37,9 @@ This repository contains my Hyprland configuration and related dotfiles. It is o
   - [`cava/config`](.config/cava/config)
 
 ## How this is organized
-- Core compositor config: see [`.config/hypr/hyprland.conf`](.config/hypr/hyprland.conf). Variables like [`$terminal`](.config/hypr/hyprland.conf) and [`$fileManager`](.config/hypr/hyprland.conf) let you swap apps globally.
+- Core compositor config: [`hyprland.conf`](.config/hypr/hyprland.conf), with monitor and workspace rules split into [`monitors.conf`](.config/hypr/monitors.conf) and [`workspaces.conf`](.config/hypr/workspaces.conf).
 - Lock and wallpaper: [`hyprlock.conf`](.config/hypr/hyprlock.conf) and [`hyprpaper.conf`](.config/hypr/hyprpaper.conf).
-- Waybar modules & styling: [`.config/waybar/config`](.config/waybar/config) and [`.config/waybar/style.css`](.config/waybar/style.css).
+- Waybar lives under [`waybar/`](waybar/) at the repository root and includes its own modules, scripts, styles, and themes.
 - Fastfetch flavors live under `.config/fastfetch/` and include PNG/ASCII assets.
 
 ## Desktop screenshots
@@ -39,10 +48,6 @@ This repository contains my Hyprland configuration and related dotfiles. It is o
   <summary>Desktop</summary>
 
   ![Primary desktop](./images/desktop.png)
-
-  Notes:
-  - Which monitor: e.g. 1920x1080
-  - Special tweaks: e.g. custom shadow / blur in [`hyprland.conf`](.config/hypr/hyprland.conf)
 </details>
 
 <details>
@@ -50,8 +55,8 @@ This repository contains my Hyprland configuration and related dotfiles. It is o
 
   ![Waybar](./images/waybar.png)
 
-  - Config: [`.config/waybar/config`](.config/waybar/config)
-  - Style: [`.config/waybar/style.css`](.config/waybar/style.css)
+  - Config: [`waybar/config.jsonc`](waybar/config.jsonc)
+  - Style: [`waybar/style.css`](waybar/style.css)
 </details>
 
 <details>
@@ -59,8 +64,8 @@ This repository contains my Hyprland configuration and related dotfiles. It is o
 
   ![Lock screen](./images/lock.png)
 
-  - Lock config: [`.config/hypr/hyprlock.conf`](.config/hypr/hyprlock.conf)
-  - Background: [`.config/hypr/hyprpaper.conf`](.config/hypr/hyprpaper.conf)
+  - Lock config: [`hyprlock.conf`](.config/hypr/hyprlock.conf)
+  - Background: [`hyprpaper.conf`](.config/hypr/hyprpaper.conf)
 </details>
 
 ## Notes
