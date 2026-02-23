@@ -64,4 +64,4 @@ This repository contains my Hyprland configuration and related dotfiles. It is o
 </details>
 
 ## Notes
-  - Wallpaper shown in screenshots is saved at `images/wallpaper.png`
+  - Wallpaper shown in screenshots is saved at `images/wallpaper.jpg`
